@@ -1,0 +1,38 @@
+<!-- 
+ANGULAR GEOGRAPHICAL FROM - How to use
+author: Gabriel Checchia Vitali
+version 1.0.0
+-->
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+	<head>
+		<meta charset="utf-8">
+	</head>
+
+	<body>
+		<!-- Angular configuration -->
+		<script type="text/javascript" src="angular/angular.js"></script>
+	    <script type="text/javascript" src="angular-geographical-form.js"></script>
+		<!-- END OF Angular configuration -->
+
+		<div ng-controller="CityStateController">
+			<h3>Example Form:</h3>
+			<form>
+				<p>Country:</p><select ng-change="countryItemChanged()" ng-model="country" ng-options="o for o in countries"><option></option></select>
+				<p>State:</p><select ng-show="country == 'Brazil'" ng-change="stateItemChanged()" ng-model="state" ng-options="o for o in states"></select><input ng-show="country != 'Brazil'" class="text" ng-model="state" />
+				<p>City:</p><select ng-show="country == 'Brazil'" ng-options="o for o in cities[indexOfState]" ng-model="city"></select>
+				    		<input ng-show="country != 'Brazil'" class="text" ng-model="city" />
+			</form>
+
+			</br>
+			<span>Selected Country: {{country}} </span>
+			</br>
+			<span>Selected State: {{state}} </span>
+			</br>
+			<span>Selected City: {{city}}</span>
+			</br>
+
+
+		</div>
+	</body>
+</html>
