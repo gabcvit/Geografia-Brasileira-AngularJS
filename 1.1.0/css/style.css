@@ -1,0 +1,74 @@
+.title {
+	display:block;
+	text-align: center;
+	margin: 10% 0 5% 0;
+}
+
+h1 {
+	color:gray;
+	font-weight: bold;
+	font-size: 50px;
+	display: inline;
+}
+
+h1.atlantean {
+	color:#014E9E;
+}
+
+h1.watery {
+	color: #067980;
+}
+
+h1.sand-dark {
+	color: #8A6C0C;
+}
+
+a {
+	color:#067980;
+	font-weight: bold;
+}
+
+a:hover {
+	color: #8A6C0C;
+}
+
+.footer {
+	display:block;
+	border-top: 1px solid #AFA490;
+	margin: 7% auto;
+	padding-top: 20px;
+}
+
+p {
+	display:block;
+	text-align: center;
+}
+
+span {
+	text-align: center;
+	display:block;
+	text-decoration: underline;
+}
+
+label {
+	color:#014E9E;
+	margin-top: 20px;
+}
+
+.form-group {
+	margin: 10px auto;
+}
+
+form {
+	margin: 0 auto;
+	display: block;
+	text-align: center;
+}
+
+select option {
+	text-align: center;
+}
+
+hr {
+
+}
