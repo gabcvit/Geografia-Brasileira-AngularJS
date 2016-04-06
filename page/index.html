@@ -1,0 +1,62 @@
+<!-- 
+ANGULAR GEOGRAPHICAL FROM
+author: Gabriel Checchia Vitali
+version 1.0.0
+-->
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+	<head>
+		<meta charset="utf-8">
+		<link rel="shortcut icon" type="image/png" href="img/favicon.ico"/>
+		<link href="lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet"> <!--Bootstrap set up -->
+		<link href="css/animate.css" rel="stylesheet">
+		<link href="css/style.css" rel="stylesheet">
+	</head>
+
+	<body>
+		<!-- Angular configuration -->
+		<script type="text/javascript" src="lib/angular/angular.js"></script>
+	    <script type="text/javascript" src="lib/angular-route/angular-route.js"></script>
+	    <script type="text/javascript" src="lib/angular-resource/angular-resource.js"></script>
+	    <script type="text/javascript" src="js/main.js"></script>
+		<!-- END OF Angular configuration -->
+
+		<div class="row animated bounceIn" ng-controller="CityStateController">
+        	<div class="col-lg-12">
+        		<div class="title">
+			  		<h1 class="atlantean">ANGULAR </h1><h1 class="watery">GEOGRAPHICAL </h1><h1 class="sand-dark">FORM</h1>
+			  	</div>
+			  	<span class="bounceIn">{{country}} -> {{state}} -> {{city}}</span>
+			 	<form class="col-lg-12">
+			  		<div class="form-group">
+			  			<label>Country:</label>
+			  			<div class="col-lg-12">
+			  				<select ng-change="countryItemChanged()" ng-model="country" ng-options="o for o in countries"><option></option></select>
+			  			</div>
+			  		</div>
+				    <div class="form-group">
+				    	<label >State:</label>
+				    	<div class="col-lg-12">
+				    		<select ng-show="country == 'Brazil'" ng-change="stateItemChanged()" ng-model="state" ng-options="o for o in states"></select>
+				    		<input ng-show="country != 'Brazil'" class="text" ng-model="state" />
+				    	</div>
+				    </div>
+				    <div class="form-group">
+				    	<label>City:</label>
+				    	<div class="col-lg-12">
+				    		<select ng-show="country == 'Brazil'" ng-options="o for o in cities[indexOfState]" ng-model="city"></select>
+				    		<input ng-show="country != 'Brazil'" class="text" ng-model="city" />
+				    	</div>
+				    </div>
+			  	</form>	
+			</div>
+			<div class="col-lg-12">
+				<div class="footer">
+			  		<p> <a href="AGF - example.zip">Download Angular Geographical Form</a> or <a href="https://github.com/gabcvit/Angular-Geographical-Form">View on Github</a></p>
+
+			  		<p>Created by <a href="http://www.gabrielvitalideveloper.com">Gabriel Vitali</a></p>
+			  	</div>
+			</div>
+		</div>
+	</body>
+</html>
