@@ -1,4 +1,4 @@
-angular.module('myApp', []).controller('CityStateController', ['$scope', function($scope) { 
+angular.module('myApp', []).controller('GeografiaBrasileira', ['$scope', function($scope) { 
 
     $scope.countryItemChanged = function(){
       $scope.city = "";
@@ -9,10 +9,11 @@ angular.module('myApp', []).controller('CityStateController', ['$scope', functio
       $scope.indexOfState = ($scope.states.indexOf($scope.state)) +1;
     }
 
-    $scope.city = ""
-    $scope.state = ""
-    $scope.country = ""
-    $scope.indexOfState = 0
+    $scope.city = "";
+    $scope.state = "";
+    $scope.country = "";
+    $scope.indexOfState = 0;
+    $scope.countries = ['Brasil'];
     $scope.states = ['Acre','Alagoas','Amazonas','Amapá','Bahia','Ceará','Distrito Federal','Espírito Santo','Goiás','Maranhão','Minas Gerais','Mato Grosso do Sul','Mato Grosso','Pará','Paraíba','Pernambuco','Piauí','Paraná','Rio de Janeiro','Rio Grande do Norte','Rondônia','Roraima','Rio Grande do Sul','Santa Catarina','São Paulo','Sergipe','Tocantins']
     $scope.cities = 
     [
