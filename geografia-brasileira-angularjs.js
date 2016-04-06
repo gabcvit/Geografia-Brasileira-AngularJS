@@ -1,4 +1,4 @@
-angular.module('myApp', []).controller('CityStateController', ['$scope', function($scope) { 
+angular.module('myApp', []).controller('GeografiaBrasileira', ['$scope', function($scope) { 
 
     $scope.countryItemChanged = function(){
       $scope.city = "";
