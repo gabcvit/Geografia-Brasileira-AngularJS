@@ -19,6 +19,7 @@ version 1.0.0
 	    <script type="text/javascript" src="lib/angular-route/angular-route.js"></script>
 	    <script type="text/javascript" src="lib/angular-resource/angular-resource.js"></script>
 	    <script type="text/javascript" src="js/main.js"></script>
+	    <script type="text/javascript" src="js/map-controller.js"></script>
 		<!-- END OF Angular configuration -->
 
 		<a href="https://github.com/gabcvit"><img style="position: absolute; top: 0; left: 0; border: 0; z-index: 999;" src="https://camo.githubusercontent.com/567c3a48d796e2fc06ea80409cc9dd82bf714434/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f6c6566745f6461726b626c75655f3132313632312e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_left_darkblue_121621.png"></a>
@@ -31,19 +32,19 @@ version 1.0.0
 			  	<span class="bounceIn">{{country}} -> {{state}} -> {{city}}</span>
 			 	<form class="col-lg-12">
 			  		<div class="form-group">
-			  			<label>País:</label>
+			  			<label>País / Country:</label>
 			  			<div class="col-lg-12">
 			  				<select ng-change="countryItemChanged()" ng-model="country" ng-options="o for o in countries"><option></option></select>
 			  			</div>
 			  		</div>
 				    <div class="form-group">
-				    	<label>Estado:</label>
+				    	<label>Estado / State:</label>
 				    	<div class="col-lg-12">
 				    		<select ng-disabled="country != 'Brasil'" ng-change="stateItemChanged()" ng-model="state" ng-options="o for o in states"></select>
 				    	</div>
 				    </div>
 				    <div class="form-group">
-				    	<label>Cidade:</label>
+				    	<label>Cidade / City:</label>
 				    	<div class="col-lg-12">
 				    		<select ng-disbled="country != 'Brasil'" ng-options="o for o in cities[indexOfState]" ng-model="city"></select>
 				    	</div>
@@ -52,9 +53,9 @@ version 1.0.0
 			</div>
 			<div class="col-lg-12">
 				<div class="footer">
-			  		<p> <a href="geografia-brasileira-angularjs.js">Download Geografia Brasileira AngularJS</a> or <a href="https://github.com/gabcvit/Geografia-Brasileira-AngularJS">Ver no Github</a></p>
+			  		<p> <a href="geografia-brasileira-angularjs.js">Download Geografia Brasileira AngularJS</a> or <a href="https://github.com/gabcvit/Geografia-Brasileira-AngularJS">Ver no Github / See on Github</a></p>
 
-			  		<p>Criado por <a href="http://www.gabrielvitalideveloper.com">Gabriel Vitali</a></p>
+			  		<p>Criado por / Created by <a href="http://www.gabrielvitalideveloper.com">Gabriel Vitali</a></p>
 			  	</div>
 			</div>
 		</div>
