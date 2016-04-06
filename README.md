@@ -22,7 +22,14 @@
 <p>Cidade/City:</p><select ng-disabled="country != 'Brasil'" ng-options="o for o in cities[indexOfState]" ng-model="city"></select>
 ```
 
-4) Sinta-se convidado para dar feedback para qualquer upgrade/reportar bug // Feel free to give feedback for any upgrade/bug report:
+4) Para imprimir os valores selecionados é só utilizar o ng-model que foi utilizado na parte 3) // To print the selected values you have only to use the right ng-model on part 3)
+```html
+<span>País/Country: {{country}} </span>
+<span>Estado/State: {{state}} </span>
+<span>Cidade/City: {{city}}</span>
+```
+
+5) Sinta-se convidado para dar feedback para qualquer upgrade/reportar bug // Feel free to give feedback for any upgrade/bug report:
 
 ##License
 
