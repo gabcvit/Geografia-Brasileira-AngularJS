@@ -1,5 +1,7 @@
 # Geografia Brasileira AngularJS
-*Form created in angular to treat data according to country, state and city*
+*Form created in angular to treat location data according to country, state and city - for Brazil only!*
+
+Main page: http://gabcvit.github.io/Geografia-Brasileira-AngularJS/
 
 `geografia-brasileira-angularjs.js` é um controller em AngularJS que pode ser usado por todos para organizar dados geográficos Brasileiros inseridos por usuários. //`geografia-brasileira-angularJS.js` is an AngularJS controller that anyone can use to organize geographical data from Brazil inserted by users
 
